@@ -18,7 +18,7 @@ resource "aws_autoscaling_group" "balal-asg" {
     version = "$Latest"
   }
 }
-#
+
 resource "aws_lb" "balal-lb" {
   name               = "balal-website-alb"
   internal           = false
