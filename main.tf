@@ -19,6 +19,7 @@ resource "aws_autoscaling_group" "balal-asg" {
   }
 }
 
+
 resource "aws_lb" "balal-lb" {
   name               = "balal-website-alb"
   internal           = false
