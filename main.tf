@@ -22,7 +22,7 @@ resource "aws_autoscaling_group" "balal-asg" {
 resource "aws_lb" "balal-lb" {
   name               = "balal-website-alb"
   internal           = false
-  load_balancer_type = "application"                                # In order to create lb we should have tg  for application testing
+  load_balancer_type = "application"                                # In order to create lb we should have tg  for application
   security_groups    = [aws_security_group.balal-lb-sg.id]
   subnets            = [for subnet in data.aws_subnets.public.ids : subnet]           
 
